@@ -1,0 +1,85 @@
+:root {
+  /* Colors */
+  /* Primary colors */
+  --yellow: hsl(47, 88%, 63%);
+
+  /* Neutral colors */
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+
+  /* Fonts */
+  --font-size: 16px;
+  --font-family: [Figtree](https://fonts.google.com/specimen/Figtree);
+  --weight-normal: 600;
+  --weight-bold: 800;
+}
+
+body {
+  background-color: var(--yellow);
+}
+.App {
+  background-color: var(--white);
+  border-radius: 12px;
+  margin: 35% 20px;
+  border: 2px solid var(--black);
+  box-shadow: 6px 6px;
+}
+
+.app__image {
+  width: 85%;
+  margin: 18px 25px;
+  border-radius: 12px;
+}
+
+.app__title {
+  color: var(--black);
+  font-size: 12px;
+  background-color: var(--yellow);
+  font-weight: var(--weight-bold);
+  font-family: var(--font-family);
+  margin-left: 25px;
+  border-radius: 5px;
+  padding: 4px 8px;
+  border-style: none;
+}
+
+.app__desc {
+  font-size: 12px;
+  margin-left: 25px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: var(--weight-bold);
+  margin-left: 25px;
+}
+
+.description {
+  font-size: 14px;
+  margin: 0 25px;
+  color: var(--grey);
+}
+
+.profile__title {
+  font-size: 14px;
+  font-weight: var(--weight-bold);
+  margin-left: 10px;
+}
+
+.profile__image {
+  width: 10%;
+  margin-bottom: 25px;
+}
+
+.profile {
+  display: flex;
+  margin: 18px 25px;
+}
+
+@media (min-width: 376px) and (max-width: 1440px) {
+  .App {
+    width: 320px;
+    margin: 120px auto;
+  }
+}
